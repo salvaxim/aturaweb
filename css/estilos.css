@@ -1,0 +1,533 @@
+    @font-face {
+        font-family: “Raleway”;
+        src: url(“fonts/Raleway/Raleway-Regular.ttf”) format(“truetype”), url(“fonts/Raleway/Raleway-Italic.ttf”) format(“truetype”), url(“fonts/Raleway/Raleway-Bold.ttf”) format(“truetype”);
+    }
+    
+    @font-face {
+        font-family: “Lato”;
+        src: url(“fonts/Lato/Lato-Regular.ttf”) format(“truetype”), url(“fonts/Lato/static/Lato-Italic.ttf”) format(“truetype”), url(“fonts/Lato/Lato-Bold.ttf”) format(“truetype”);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: "Lato", "Raleway";
+    }
+    
+    h2 {
+        font-family: "Lato";
+        font-weight: 700;
+        color: #525353;
+    }
+    
+    h3 {
+        font-family: "Lato";
+        font-weight: 600;
+        color: #000;
+        font-size: large;
+    }
+    
+    body {
+        background: #fff;
+        font-family: "Lato", "Open Sans";
+        font-size: 16px;
+    }
+    /* ----- ----- HEADER ----- ----- */
+    
+    .logoatura {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logoatura img {
+        width: 100%;
+        /*height: 100%;*/
+    }
+    
+    header {
+        background-color: #c8caca;
+        width: 100%;
+        min-height: 110px;
+        /*display:flex;
+    flex-direction: row;*/
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    
+    .navbar {
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    
+    li .nav-link {
+        font-family: "Raleway";
+        text-decoration: none;
+        color: rgb(32, 32, 32);
+        font-weight: 600;
+        display: inline-block;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 10px;
+    }
+    
+    .nav-link:hover {
+        font-weight: 900;
+        color: rgb(32, 32, 32);
+    }
+    /* ----- ----- MAIN ----- ----- */
+    
+    .capacidad {
+        background-image: url("../img/foto-empresa.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 250px;
+        margin-bottom: 0px;
+    }
+    
+    .contenedor {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .titulomain {
+        font-family: "Raleway";
+        margin-top: 25px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #525353
+    }
+    
+    .fondocapacidad {
+        color: #FFFFFF;
+        font-weight: 500;
+        /*background-color: rgb(94, 93, 93);*/
+    }
+    
+    .puntosim {
+        font-family: "Raleway";
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0.5rem;
+        -webkit-font-smoothing: antialiased;
+        font-size: 20px;
+        align-content: flex-start;
+        width: 400px;
+        height: 200px;
+        margin: auto;
+    }
+    
+    .puntos {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        margin-left: 50px;
+    }
+    
+    #punticon:hover {
+        text-decoration: none;
+    }
+    
+    .puntos h3:hover {
+        border-bottom: 2px solid black;
+    }
+    
+    .iconos {
+        margin-right: 15px;
+        /*background-color: white;*/
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        /*padding: 3px;
+    border-radius: 10px;*/
+    }
+    
+    .iconos img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .punto {
+        font-family: "Raleway";
+        padding-top: 10px;
+    }
+    /*.main .trabajos {
+    background: #a5a4a4;
+    padding: 5px 0;
+}
+*/
+    
+    .main .trabajos {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .main .trabajos .contenedor-trabajos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .main .trabajos .contenedor-trabajos .trabajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 23%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .main .trabajos .contenedor-trabajos .trabajo .thumb {
+        width: 100%;
+    }
+    
+    .main .trabajos .contenedor-trabajos .trabajo .thumb img {
+        width: 90%;
+        border-radius: 3px;
+    }
+    
+    .main .trabajos .contenedor-trabajos .trabajo .thumb img:hover {
+        width: 100%;
+        filter: brightness(100%);
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
+    
+    .main .trabajos .contenedor-trabajos .trabajo .thumb img:not(:hover) {
+        filter: brightness(70%);
+    }
+    /*.main .trabajos .contenedor-trabajos .trabajo .thumb img:hover {
+        
+        opacity: 0.5;
+    }*/
+    
+    .main .trabajos .contenedor-trabajos .trabajo .descripcion {
+        text-align: center;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    
+    .main .trabajos .contenedor-trabajos .trabajo .descripcion .titulotrabajos {
+        font-family: "Lato";
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        margin-bottom: 0px;
+    }
+    
+    .main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+        font-size: 14px;
+        color: #636363;
+    }
+    /*----------COMO TRABAJAMOS --------------*/
+    /*AQUI EMPIEZA E ACORDEON*/
+    
+    .contenido-principal {
+        line-height: 1.5rem;
+        font-family: "Lato";
+    }
+    /** Accordion Servicios **/
+    
+    #servicios .card-header {
+        background-color: #828485;
+        padding: 0 1.25rem;
+    }
+    
+    #servicios .card-header .btn-link {
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    
+    #servicios .card-body {
+        font-size: 1rem;
+    }
+    /* AQUI FINALIZA ACORDEON */
+    
+    .comotrabajamos {
+        /*background-image: url("../img/architecture-1857175_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    /*background-attachment: fixed;*/
+        /*width: 90%;*/
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        overflow: hidden;
+        margin-left: 0px;
+        margin-top: 0px;
+        justify-content: space-around;
+        background: gray;
+    }
+    
+    .contenedor2 {
+        /*max-width: 500px;*/
+        /*width: 40%;*/
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .contenedor3 {
+        /*max-width: 500px;*/
+        width: 60%;
+        margin-left: 20px;
+        /*overflow: hidden;*/
+        background-image: url("../img/texture-2068283_640.jpg");
+        /*background-color: #f7a5a5;*/
+        max-height: 426px;
+    }
+    
+    .contenedor3 .titulomain {
+        font-family: "Raleway";
+        font-style: italic;
+        text-align: center;
+        color: white;
+    }
+    
+    .contecomo {
+        font-family: "Raleway";
+        /*font-family: 'Font Awesome 5 Brands';*/
+        /* display: flex;
+        flex-direction: column;
+        /*vertical-align: top;*/
+        margin: 10px 20px 0px 50px;
+        padding: 0.5rem;
+        -webkit-font-smoothing: antialiased;
+        color: black;
+        line-height: 40px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .contecomo li:hover {
+        text-decoration: underline red;
+        text-transform: uppercase;
+        text-indent: 30px;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    /* ----- -----PAGINA CONTACTO ----- ----- */
+    
+    .contencontact {
+        width: 50%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .contacto {
+        margin-top: 20px;
+        padding: 40px 0;
+        background: #6e6e6e;
+        border-radius: 30px;
+    }
+    
+    .contacto .titulo {
+        font-size: 34px;
+        line-height: 34px;
+        margin-bottom: 60px;
+        font-weight: 300;
+        color: #2d2d2e;
+        text-align: center;
+    }
+    
+    .contacto .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .contacto .formulario input[type="text"],
+    .contacto .formulario input[type="email"],
+    .contacto .formulario textarea {
+        border: 2px solid #cecece;
+        border-radius: 5px;
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #a4a4a4;
+    }
+    
+    .contacto .formulario input[type="text"],
+    .contacto .formulario input[type="email"] {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    
+    .contacto .formulario textarea {
+        width: 100%;
+        height: 100px;
+        min-width: 100%;
+        margin-bottom: 15px;
+        min-height: 50px;
+        max-height: 200px;
+    }
+    
+    .contacto .formulario .boton {
+        margin: auto;
+        background: #ac1c1c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 40px;
+    }
+    
+    .contacto .formulario .boton:hover {
+        background: #38ea50;
+        color: #2d2d2e;
+    }
+    /* ----- -----FOOTER ----- ----- */
+    /** Footer **/
+    
+    .emp-acred-footer {
+        display: flex;
+    }
+    
+    .emp-acred-footer img {
+        width: 100%;
+    }
+    
+    .footer-menu .nav-link {
+        color: black;
+        line-height: 12px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    .footer-menu .nav-link:hover {
+        /*text-transform: uppercase;*/
+        font-weight: bolder;
+        transition: 2s;
+        text-decoration: underline;
+    }
+    
+    .footcontacto {
+        font-family: "Lato";
+        /*font-family: 'Font Awesome 5 Brands';*/
+        display: flex;
+        flex-direction: column;
+        /*vertical-align: top;*/
+    }
+    
+    .footcontact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .footiconos1 {
+        /*text-align: center;*/
+        margin-right: 15px;
+        /*background-color: burlywood;*/
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .footiconos2 {
+        /*text-align: center;*/
+        margin-right: 15px;
+        /*background-color: burlywood;*/
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+        /*margin-top: 5px;*/
+        /*margin-left: 4px;*/
+    }
+    /* ----- ----- MEDIA QUERIES ----- ----- */
+    
+    @media screen and (max-width: 1000px) {
+        .contecomo {
+            font-size: 16px;
+            line-height: 36px;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        header .menu {
+            text-align: center;
+        }
+        .main .trabajos .contenedor-trabajos .trabajo {
+            width: 46%;
+        }
+        .puntos {
+            padding-left: 10px;
+        }
+        .contenedor2 {
+            display: none;
+        }
+        .contenedor3 {
+            width: 100%;
+        }
+        .emp-acred-footer img {
+            max-width: 300px;
+            max-height: 93px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        /*VER ESTOOOOOOOO*/
+        footer .redes-sociales .contenedor {
+            flex-wrap: wrap;
+        }
+        /*VER ESTOOOOOOOO*/
+        footer .redes-sociales .contenedor a {
+            padding: 20px;
+        }
+        .puntosim h3 {
+            font-size: 16px;
+        }
+        .puntos {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .puntosim {
+            margin-top: 20px;
+        }
+        .contecomo {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .titulomain h2 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .puntosim h3 {
+            font-size: 12px;
+        }
+        .contenedor .titulotrabajos {
+            font-size: 12px;
+        }
+        .contecomo {
+            margin: 10px 10px 10px 30px;
+        }
+        .logoatura img {
+            min-width: 150px;
+            min-height: 20px;
+        }
+        .emp-acred-footer img {
+            min-width: 150px;
+            min-height: 46px;
+        }
+        .logoatura small {
+            font-size: 10px;
+        }
+    }
+    /*# sourceMappingURL=estilos.css.map */
