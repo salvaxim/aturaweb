@@ -173,6 +173,7 @@
     .main .trabajos {
         width: 90%;
         margin: auto;
+        margin-top: 20px;
     }
     
     .main .trabajos .contenedor-trabajos {
@@ -193,17 +194,19 @@
     
     .main .trabajos .contenedor-trabajos .trabajo .thumb {
         width: 100%;
+        text-align: center;
     }
     
     .main .trabajos .contenedor-trabajos .trabajo .thumb img {
         width: 90%;
         border-radius: 3px;
+        max-height: 120px;
     }
     
     .main .trabajos .contenedor-trabajos .trabajo .thumb img:hover {
         width: 100%;
         filter: brightness(100%);
-        transform: scale(1.05);
+        transform: scale(1.1);
         transition: 0.2s;
     }
     
@@ -324,73 +327,24 @@
     /* ----- -----PAGINA CONTACTO ----- ----- */
     
     .contencontact {
-        width: 50%;
-        max-width: 1000px;
+        background-image: url("../img/trabajos/3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*width: 40%;*/
+        /*max-width: 1000px;*/
         margin: auto;
         overflow: hidden;
     }
     
-    .contacto {
-        margin-top: 20px;
-        padding: 40px 0;
-        background: #6e6e6e;
-        border-radius: 30px;
+    .contencontact h2 {
+        color: white;
+        font-family: "Lato";
+        font-weight: 500;
     }
     
-    .contacto .titulo {
-        font-size: 34px;
-        line-height: 34px;
-        margin-bottom: 60px;
-        font-weight: 300;
-        color: #2d2d2e;
-        text-align: center;
-    }
-    
-    .contacto .formulario {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    .contacto .formulario input[type="text"],
-    .contacto .formulario input[type="email"],
-    .contacto .formulario textarea {
-        border: 2px solid #cecece;
-        border-radius: 5px;
-        padding: 15px 20px;
-        font-size: 16px;
-        color: #a4a4a4;
-    }
-    
-    .contacto .formulario input[type="text"],
-    .contacto .formulario input[type="email"] {
-        width: 49%;
-        margin-bottom: 15px;
-    }
-    
-    .contacto .formulario textarea {
-        width: 100%;
-        height: 100px;
-        min-width: 100%;
-        margin-bottom: 15px;
-        min-height: 50px;
-        max-height: 200px;
-    }
-    
-    .contacto .formulario .boton {
-        margin: auto;
-        background: #ac1c1c;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 15px 40px;
-    }
-    
-    .contacto .formulario .boton:hover {
-        background: #38ea50;
-        color: #2d2d2e;
+    .formulario-contacto {
+        border: 2px solid #9a9a9a;
+        background-color: #ffffff;
     }
     /* ----- -----FOOTER ----- ----- */
     /** Footer **/
